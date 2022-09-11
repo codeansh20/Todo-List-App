@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-image: url(https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.wrapper {
+    position: relative;
+  width: 70vw;
+  background-color: transparent;
+  box-shadow: 5px 5px 25px white;
+}
+.wrapper .heading {
+  text-align: center;
+  font-size: 22px;
+  text-shadow: 4px 4px 10px red;
+  margin: 7px 0px;
+}
+.wrapper .input form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin: 15px 0px;
+}
+.wrapper .input form #txt {
+  padding: 0.4rem;
+  width: 70%;
+  font-size: 17px;
+}
+.wrapper .input form #txt:focus {
+  padding: 0.4rem;
+  width: 70%;
+  font-size: 19px;
+  background-color:rgb(72,51,50) ;
+  color: white;
+  outline: none;
+  border: none;
+}
+.wrapper .input form .submit_btn {
+  padding: 0.4rem;
+  width: 13%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.wrapper .input form .submit_btn:hover {
+  padding: 0.4rem;
+  width: 13%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(251,251,118);
+  color: blue;
+}
+.wrapper .todo_list
+{
+  padding: 0.5rem;
+}
+.wrapper .todo_list ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+  padding: 0.4rem;
+  width: 100%;
+  background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.wrapper .todo_list ul li {
+  width: 60%;
+  padding: 0.3rem;
+  font-family: arial;
+  font-size: 18px;
+  list-style-type: none;
+}
+.wrapper .todo_list ul .controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.wrapper .todo_list ul .controls button {
+  padding: 0.4rem;
+  font-size: 16px;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  opacity: none;
+  cursor: pointer;
+}
+.wrapper .todo_list ul .controls button:hover{
+    background-color: #fea805;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgb(0, 0, 20);
+}
+.wrapper .extrainfo
+{
+  display: block;
+  height: 5vh;
+}
+.wrapper .extrainfo button
+{
+    float: right;
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    padding: 0.5rem;
+    background-color:#fafc6b;
+    color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    opacity: none;
+    
+}
+@media screen and (max-width:760px) {
+
+  .wrapper .input form .submit_btn {
+    padding: 0.4rem;
+    width: 18%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    font-weight: normal;
+  }
+  .wrapper .todo_list ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    padding: 0.4rem;
+    width: 100%;
+    background-color: chartreuse;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .wrapper .todo_list ul li {
+    width: 50%;
+    padding: 0.3rem;
+    font-family: arial;
+    font-size: 18px;
+    list-style-type: none;
+  }
+  .wrapper .todo_list ul .controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+  }
+  .wrapper .todo_list ul .controls button {
+    padding: 0.4rem;
+    font-size: 16px;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    opacity: none;
+    cursor: pointer;
+  }
+  .wrapper .todo_list ul .controls button:hover{
+      background-color: rgba(255, 255, 255, 0.863);
+      border-radius: 10px;
+      font-weight: bold;
+      text-shadow: 4px 4px 10px rgb(162, 255, 0);
+  } 
+}
+@media screen and (max-width:442px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-image: url(https://images.unsplash.com/photo-1611643378160-39d6dd915b69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .wrapper {
+    position: relative;
+  width: 80vw;
+  background-color: transparent;
+  box-shadow: 5px 5px 25px white;
+}
+  .wrapper .input form .submit_btn {
+    padding: 0.4rem;
+    width: 20%;
+    font-size: 16px;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    outline: none;
+  }  
+  .wrapper .todo_list
+  {
+     display: block;
+     margin-right: 15px;
+     padding: 0.3rem;
+  }
+  .wrapper .input form .submit_btn:hover {
+    font-weight: normal;
+  }
+  .wrapper .todo_list ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    padding: 0.4rem;
+    width: 100%;
+    background-color: chartreuse;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .wrapper .todo_list ul li {
+    width: 40%;
+    padding: 0.3rem;
+    font-family: arial;
+    font-size: 18px;
+    list-style-type: none;
+  }
+  .wrapper .todo_list ul .controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45%;
+  }
+  .wrapper .todo_list ul .controls button {
+    padding: 0.4rem;
+    font-size: 16px;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    opacity: none;
+    cursor: pointer;
+  }
+  .wrapper .todo_list ul .controls button:hover{
+      background-color: rgba(255, 255, 255, 0.863);
+      border-radius: 10px;
+      font-weight: bold;
+      text-shadow: 4px 4px 10px rgb(28, 56, 150);
+  }
+  .wrapper .extrainfo
+{
+  display: block;
+  height: 5vh;
+}
+.wrapper .extrainfo button
+{
+    /* float: right; */
+    position: absolute;
+    padding: 0.5rem;
+    bottom: -10px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#fafc6b;
+    color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    opacity: none;
+    
+}
+}
